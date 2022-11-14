@@ -1,0 +1,21 @@
+header{
+    background-color: lightgray;
+}
+body{
+    background-color: lightgray;
+    max-width: 100%;
+}
+.logo{
+    max-width: 20%;
+}
+.portrait{
+    width: 50%;
+    max-width: 50%;
+}
+.about-me{
+    background-color: lightblue;
+}
+section{
+    padding: 1rem;
+}
+
