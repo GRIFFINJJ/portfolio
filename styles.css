@@ -1,14 +1,19 @@
 header{
-    background-color: lightgray;
-}
+    background-color: rgb(223, 222, 222);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    }
 body{
-    background-color: lightgray;
+    background-color: rgb(223, 222, 222);
     max-width: 100%;
+    display: block;
 }
 .logo{
-    max-width: 14%;
-    padding: -3rem;
-    display: inline-block;
+    width: 150px;
+    height: 150px;
+    padding-right: 1rem;
+    padding-top: 1rem;
 }
 .portrait{
     width: 50%;
@@ -32,18 +37,68 @@ body{
 .contact{
     background-color: rgb(241, 160, 171);
 }
+.about-meh{
+    background-color: rgb(175, 218, 238);
+}
+.experienceh{
+    background-color: rgb(244, 245, 178);
+}
+.educationh{
+    background-color: rgb(201, 252, 231);
+}
+.achievementsh{
+    background-color: rgb(235, 175, 227);
+}
+.galleryh{
+    background-color: rgb(238, 212, 183);
+}
+.contacth{
+    background-color: rgb(241, 160, 171);
+}
+.about-meh:hover{
+    background-color: rgb(0, 137, 201);
+    color:white;
+    border: 2px solid white;
+}
+.experienceh:hover{
+    background-color: rgb(226, 121, 0);
+    color:white;
+    border: 2px solid white;
+}
+.educationh:hover{
+    background-color: rgb(0, 138, 80);
+    color:white;
+    border: 2px solid white;
+}
+.achievementsh:hover{
+    background-color: rgb(90, 0, 78);
+    color:white;
+    border: 2px solid white;
+}
+.galleryh:hover{
+    background-color: rgb(122, 0, 0);
+    color:white;
+    border: 2px solid white;
+}
+.contacth:hover{
+    background-color: rgb(196, 0, 114);
+    color:white;
+    border: 2px solid white;
+}
+.navigation{
+    display: inline-block;
+    padding: -1rem;
+}
 section{
     padding: 2rem;
+    margin: 2rem;
+    border: .1rem dashed white;
 }
 h1{
     font-size: 5rem;
     padding: 0;
-    left: 10rem;
-    margin: 2rem;
-}
-.pagehead{
-    padding: -2rem;
-    display: inline-block;
+    font-size: 300%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 header nav{
     display: block;
@@ -58,6 +113,27 @@ header nav a{
     border: 1px solid #ffffff;
 }
 .image{
-    max-width: 60%;
-    min-width: 60%;
+    max-width: 100%;
+    min-width: 100%;
+    border: .1rem dashed white;
+}
+@media (max-width:1000px){
+    header nav{
+        position: static;
+        background-color: unset;
+        width: unset;
+    }
+    header nav a{
+        padding: 1rem;
+        display: inline-block;
+        border: 1px solid #ffffff;
+    }
+}
+@media (max-width:500px){
+    .logo{
+    width: 100px;
+    height: 100px;
+    padding-right: 1rem;
+    padding-top: 2.75rem;
+    }
 }
